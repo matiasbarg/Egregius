@@ -49,7 +49,7 @@ transition: all 0.75s;
 }
 
 nav ul{
-
+display: flex;
 gap: 2rem;
 }
 
