@@ -50,7 +50,7 @@ transition: all 0.75s;
 
 nav ul{
 display: flex;
-gap: 1.5rem;
+gap: 2rem;
 }
 
 nav ul li{
