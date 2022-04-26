@@ -14,61 +14,46 @@ body{
 font-family: 'Ubuntu', sans-serif;
 background-color: rgb(255, 255, 255);
 box-sizing: border-box;
-background-image: linear-gradient(90deg, rgba(97,73,56,1) 16%, rgba(85,95,86,1) 53%, rgba(166,142,93,1) 96%);;
 }
 
-/*header */
+/*header - barra de navegacion con bootstrap*/
 
-header{
-height: 150px;
-background-image: url("../img/banner1.jpg");
-background-position: center;
-background-size: cover;
-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-display: flex;
-justify-content: center;
+.sec{
+    width: 80%;
+    height: 200px;
 }
 
-/*nav sin media querys*/
+.navbar{
+    background-image: url("../img/banner1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 18vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
-nav{
-display: inline-block;
-text-align: center;
-justify-content: space-evenly;
-}
-
-.logo{
-width: 250px;
-transition: all 0.75s;
-margin-bottom: 20px;
 }
 
-.logo:hover{
-transform: scale(1.1);
-transition: all 0.75s;
+.nav-link{
+    font-weight: 600;
+    color: aliceblue;
+    
 }
 
-nav ul{
-display: flex;
-gap: 2rem;
+.navbar-brand{
+    transition: all 0.75s;
 }
 
-nav ul li{
-list-style: none;
-font-size: 1.2rem;
-font-weight: 600;
-}
-nav ul li a{
-text-decoration: none;
-color: white;
-}
-nav ul li a:hover{
-color: #fc9a07;
+.navbar-brand:hover{
+    transform: scale(1.2);
+    transition: all 0.75s;
 }
 
-.linkActive{
-color: #f7b34d;
+h5:hover{
+    color: darkorange;
+    transform: scaleY(1.1);
 }
+
+
 
 /*body*/
 
@@ -76,9 +61,9 @@ color: #f7b34d;
 
 .cuerpoIndex{
 color: black;
-margin: 300px 60px;
+margin: 50px 100px;
 text-align: center;
-font-size: 140%;
+font-size: 100%;
 font-weight: 600;
 letter-spacing: 0.1rem;
 }
@@ -86,16 +71,16 @@ letter-spacing: 0.1rem;
 .imagenIndex{
 display: flex;
 width: 100%;
-margin-top: 350px;
-margin-bottom: 350px;
+margin-top: 50px;
+margin-bottom: 50px;
 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .cuerpoHistoria{
 color: black;
-margin: 300px 60px 300px 60px;
+margin: 50px 100px;
 text-align: center;
-font-size: 140%;
+font-size: 100%;
 font-weight: 600;
 letter-spacing: 0.1rem;
 }
@@ -103,8 +88,8 @@ letter-spacing: 0.1rem;
 .imagenHistoria{
 display: flex;
 width: 100%;
-margin-top: 350px;
-margin-bottom: 350px;
+margin-top: 50px;
+margin-bottom: 50px;
 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -126,11 +111,11 @@ size: 50%;
 
 
 footer{
-height: 80px;
+height: 45px;
 width: 100%;
 background-color: #555F56;
-color: #1F1E1C;
-font-size: 1.5rem;
+color: #000000;
+font-size: 1rem;
 font-weight: 600;
 letter-spacing: 0.1rem;
 text-align: center;
@@ -140,28 +125,29 @@ position: sticky;
 bottom: 0;
 }
 
+
 .fa-whatsapp{
-color: #1F1E1C;
-font-size: 2rem;
+color: #000000;
+font-size: 1rem;
 }
 
 .fa-youtube{
-color: #1F1E1C;
-font-size: 2rem;
+color: #000000;
+font-size: 1rem;
 }
 
 .fa-instagram{
-color: #1F1E1C;
-font-size: 2rem;
+color: #000000;
+font-size: 1rem;
 }
 
 .fa-facebook{
-color: #1F1E1C;
-font-size: 2rem
+color: #000000;
+font-size: 1rem
 }
 
 .fa-angles-up{
-color: #1F1E1C;
+color: #000000;
 font-size: 1rem;
 background-color: #A68E5D;
 border-radius: 50%;
@@ -351,27 +337,6 @@ primer quiebre a los 480px, aplicado al grid de la galeria y al formulario y map
 */
 
 @media only screen and (min-width:480px){
-
-
-
-footer{
-    height: 80px;
-    width: 100%;
-    background-color: #555F56;
-    color: #1F1E1C;
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    text-align: center;
-    margin-top: 50px;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    position: sticky;
-    bottom: 0;
-    }
-
-
-/*index*/
-
 
 
 #video{
