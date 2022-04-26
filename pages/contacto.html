@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <script src="https://kit.fontawesome.com/11817004f1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header> <!--este es el header--> 
+        <nav>
+            <div class="logo-container">
+                <a href="../index.html"> <img src="../img/logo.png" alt="logo" class="logo"></a>
+            </div>
+            <ul class="animate__animated animate__lightSpeedInLeft">
+                <li><a href="historia.html" class="botonHeader"> Nuestra Historia </a></li>
+                <li><a href="galeria.html" class="botonHeader"> Galería </a></li>
+                <li><a href="contacto.html" class="linkActive"> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="CuerpoContacto"> <!--este es el cuerpo de contacto--> 
+        <section class="formContainer"> <!--este es el formulario--> 
+            <h3>Contactanos</h3><br>
+            <form action="name" class="form">
+                <input type="text" placeholder="Nombre" required class="form__input"> <input type="text" placeholder="Apellido" required class="form__input"> 
+                <input type="number" placeholder="Telefono" required class="form__input"> <input type="email" placeholder="Email" required class="form__input">
+                <textarea name="deje su mensaje" id="mensaje" cols="30" rows="5" placeholder="Deje su mensaje" class="form__textarea"></textarea><br>
+                <input type="submit" value="Enviar" class="form__input--submit"></form>
+            </section>
+            <section class="mapContainer"> <!--este es el mapa--> 
+                <h3>Ubicación</h3><br>
+                <p>Avenida Siempreviva 1492 - Tarrassa - Barcelona</p><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47768.08280891501!2d1.9820293278474703!3d41.55831003791254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a492e820fabbfd%3A0xab0d33c5f2c73098!2sTerrassa%2C%20Barcelona%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sar!4v1648104999814!5m2!1ses-419!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+            </section>
+    </main>
+    <footer> <!--este es el footer--> 
+        <a href="https://wa.me/+34678085218?text=¡Estoy+interesado!" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/ambrosio.olmos.315" target="_blank">
+            <i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/cuchillos_egregius/?hl=es" target="_blank">
+            <i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/c/CuchillosEgregius" target="_blank">
+            <i class="fa-brands fa-youtube"></i></a>
+            <p>Cuchillos Egregius | 2022</p>
+    </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    </body>
+    </html>
+
+    
