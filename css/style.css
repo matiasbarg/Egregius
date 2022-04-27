@@ -171,23 +171,17 @@ transform: scale(1.1);
 transition: all 0.75s;
 }
 
-
-
-
-
 /*contacto */
 
 .CuerpoContacto{
-    display: flex;
-    flex-wrap: wrap;
+display: flex;
+flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    }
+}
 
 .formContainer{
-display: flex;
-flex-wrap: wrap;
 background-color: #909085;
 margin: 2rem;
 gap: 2rem;
@@ -197,8 +191,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 }
 
 .mapContainer{
-display: flex;
-flex-wrap: wrap;
+
 background-color: #909085;
 margin: 2rem;
 gap: 30px;
