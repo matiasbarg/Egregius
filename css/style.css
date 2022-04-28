@@ -134,9 +134,16 @@ color: #000000;
 font-size: 1rem;
 }
 
+.fa-whatsapp:hover{
+    color: darkorange;
+}
+
 .fa-youtube{
 color: #000000;
 font-size: 1rem;
+}
+.fa-youtube:hover{
+    color: darkorange;
 }
 
 .fa-instagram{
@@ -144,9 +151,17 @@ color: #000000;
 font-size: 1rem;
 }
 
+.fa-instagram:hover{
+    color: darkorange;
+}
+
 .fa-facebook{
 color: #000000;
 font-size: 1rem
+}
+
+.fa-facebook:hover{
+    color: darkorange;
 }
 
 .fa-angles-up{
@@ -184,6 +199,7 @@ flex-wrap: wrap;
 background-color: #909085;
 margin: 2rem;
 gap: 2rem;
+text-align: center;
 justify-content: center;
 padding: 2rem;
 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -245,7 +261,7 @@ font-size: 1rem;
 padding: 0.3rem;
 }
 .form__input--submit:hover{
-background-color: grey;
+background-color: darkorange;
 }
 
 
