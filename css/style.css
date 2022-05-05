@@ -2,15 +2,15 @@
 
 
 *{
-margin: 0;
-padding: 0;
-box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
 }
 
 body{
-font-family: 'Ubuntu', sans-serif;
-background-color: rgb(255, 255, 255);
-box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
 }
 
 /*header - barra de navegacion con bootstrap*/
@@ -51,25 +51,43 @@ h5:hover{
 }
 
 
-/*body*/
+/*Seccion Idex*/
 
 
 .cuerpoIndex{
-color: black;
-margin: 50px 100px;
-text-align: center;
-font-size: 100%;
-font-weight: 600;
-letter-spacing: 0.1rem;
+    color: black;
+    margin: 50px 100px;
+    text-align: center;
+    font-size: 100%;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
 }
 
 .imagenIndex{
-display: flex;
-width: 100%;
-margin-top: 50px;
-margin-bottom: 50px;
-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
+h2{
+    font-size: 160%;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+#video{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    size: 50%;
+    margin-bottom: 5rem;
+}
+
+
+/*Seccion Nuestra Historia*/
 
 .cuerpoHist{
     width: 80%;
@@ -85,34 +103,36 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 
 .containerHist img{
     width: 100%;
+    transition: all 0.75s;
+    filter: grayscale();
+}
+
+.containerHist img:hover{
+    transform: scale(1.1);
+    transition: all 0.75s;
+    filter: none;
 }
 
 .containerHist p{
-color: #000000;
+    color: #000000;
     font-size: 100%;
-font-weight: 600;
-letter-spacing: 0.1rem;
-}
-h2{
-font-size: 160%;
-text-align: center;
-color: #000000;
-margin-bottom: 50px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
 }
 
-#video{
-display: flex;
-justify-content: space-around;
-text-align: center;
-size: 50%;
-margin-bottom: 5rem;
+
+
+/*Cuerpo Galeria*/
+
+.bodyGaleria{
+    background-color: #141414;
 }
 
 /*carrusel galeria*/
 
 
 .contenedorCarrousel{
-    margin-top: 25px;
+    margin-top: 30px;
     margin-bottom: 50px;
     background-color: #000000;
 }
@@ -120,23 +140,23 @@ margin-bottom: 5rem;
 /*footer*/
 
 footer{
-height: 45px;
-width: 100%;
-background-color: #555F56;
-color: #000000;
-font-size: 1rem;
-font-weight: 600;
-letter-spacing: 0.1rem;
-text-align: center;
-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-position: fixed;
-bottom: 0;
+    height: 45px;
+    width: 100%;
+    background-color: #555F56;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    position: fixed;
+    bottom: 0;
 }
 
 
 .fa-whatsapp{
-color: #000000;
-font-size: 1rem;
+    color: #000000;
+    font-size: 1rem;
 }
 
 .fa-whatsapp:hover{
@@ -144,16 +164,16 @@ font-size: 1rem;
 }
 
 .fa-youtube{
-color: #000000;
-font-size: 1rem;
+    color: #000000;
+    font-size: 1rem;
 }
 .fa-youtube:hover{
     color: darkorange;
 }
 
 .fa-instagram{
-color: #000000;
-font-size: 1rem;
+    color: #000000;
+    font-size: 1rem;
 }
 
 .fa-instagram:hover{
@@ -161,8 +181,8 @@ font-size: 1rem;
 }
 
 .fa-facebook{
-color: #000000;
-font-size: 1rem
+    color: #000000;
+    font-size: 1rem
 }
 
 .fa-facebook:hover{
@@ -170,102 +190,107 @@ font-size: 1rem
 }
 
 .fa-angles-up{
-color: #000000;
-font-size: 1rem;
-background-color: #A68E5D;
-border-radius: 50%;
-position: fixed;
-bottom: 12%;
-right: 3%;
-padding: 15px;
-border: solid;
-border-color: black;
-transition: all 0.75s;
-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: #000000;
+    font-size: 1rem;
+    background-color: #A68E5D;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 12%;
+    right: 3%;
+    padding: 15px;
+    border: solid;
+    border-color: black;
+    transition: all 0.75s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .fa-angles-up:hover{
-background-color: #909085;
-transform: scale(1.1);
-transition: all 0.75s;
+    background-color: darkorange;
+    transform: scale(1.1);
+    transition: all 0.75s;
 }
 
 /*contacto */
 
 .CuerpoContacto{
-display: flex;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .formContainer{
-background-color: #909085;
-margin: 2rem;
-gap: 2rem;
-text-align: center;
-justify-content: center;
-padding: 2rem;
-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #909085;
+    margin: 2rem;
+    gap: 2rem;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .mapContainer{
-background-color: #909085;
-margin: 2rem;
-gap: 30px;
-text-align: center;
-justify-content: center;
-padding: 1rem;
-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #909085;
+    margin: 2rem;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 .map{
-width: 90%;
+    width: 90%;
 }
 
 .form{
-justify-content: space-evenly;
-text-align: center;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 .form__input, form.textarea{
-width: 40%;
-margin: 2rem auto;
-padding: 0.5rem;
-color: black;
-border: none;
-font-family: 'Ubuntu', sans-serif;;
-font-size: 1rem;
-font-weight: 600;
-letter-spacing: 0.1rem;
+    width: 40%;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    color: black;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
 }
+
 .form__textarea{
-height: 5rem;
-resize: none;
-width: 87%;
-font-family: 'Ubuntu', sans-serif;;
-font-size: 1rem;
-font-weight: 600;
-letter-spacing: 0.1rem;
-margin-top: 30px;
+    height: 5rem;
+    resize: none;
+    width: 87%;
+    font-family: 'Ubuntu', sans-serif;;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
 }
+
 .form__input:focus, form.textarea:focus{
-outline: none;
+    outline: none;
 }
+
 .form__input--submit{
-display: flex;
-display: inline-block;
-background-color: white;
-margin: 2rem auto ;
-border-radius: 0.3rem;
-font-weight: 600;
-letter-spacing: 0.1rem;
-cursor: pointer;
-font-size: 1rem;
-padding: 0.3rem;
+    display: flex;
+    display: inline-block;
+    background-color: white;
+    margin: 2rem auto ;
+    border-radius: 0.3rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.3rem;
 }
+
 .form__input--submit:hover{
-background-color: darkorange;
+    background-color: darkorange;
 }
 
 
