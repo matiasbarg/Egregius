@@ -326,7 +326,7 @@ footer{
 }
 
 .item img:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: all 0.75s;
 }
 
