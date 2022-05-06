@@ -308,7 +308,6 @@ footer{
 
 .item{
     min-width: 300px;
-    max-width: 400px;
     height: 550px;
     border: solid 2px black;
     font-family: 'Ubuntu', sans-serif;;
@@ -321,7 +320,7 @@ footer{
 }
 
 .item img{
-    width: 80%;
+    max-width: 300px;
     margin: 0.5rem;
     transition: all 0.75s;
 }
@@ -369,6 +368,11 @@ footer{
 
     .item{
         height: 580px;
+    }
+
+    .item img{
+        max-width: 300px;
+        
     }
 
 
