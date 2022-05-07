@@ -56,7 +56,7 @@ h5:hover{
 
 .cuerpoIndex{
     color: black;
-    margin: 50px 100px;
+    margin: 50px 50px;
     text-align: center;
     font-size: 100%;
     font-weight: 600;
@@ -217,17 +217,23 @@ footer{
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
+
+
 
 .formContainer{
     background-color: #909085;
     margin: 2rem;
-    gap: 2rem;
+    gap: 30px;
     text-align: center;
     justify-content: center;
     padding: 2rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.formContainer h3{
+    text-decoration: underline;
 }
 
 .mapContainer{
@@ -236,9 +242,14 @@ footer{
     gap: 30px;
     text-align: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 2rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
+.mapContainer h3{
+    text-decoration: underline;
+}
+
 
 .map{
     width: 90%;
@@ -356,6 +367,24 @@ footer{
     background-color: darkorange;
 }
 
+.cuidados{
+    background-color: #909085;
+    text-align: center;
+    padding: 1.5rem;
+    justify-content: space-between;
+}
+
+.cuidados h3{
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.cuidados ul{
+    list-style-type: none;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
 
 /*Media Query para el catalogo, primer quiebre a los 720px, en dos columnas*/
 
@@ -373,6 +402,17 @@ footer{
     .item img{
         max-width: 300px;
         
+    }
+
+    .cuidados{
+        grid-template-rows: 4/5;
+        grid-column: 1/3;
+    }
+
+/*Media Query para el carrousel, segundo quiebre 1024px, mas margen superior para dejarlo centrado en pantalla*/
+
+    .contenedorCarrousel{
+        margin-top: 140px;
     }
 
 
@@ -417,6 +457,19 @@ footer{
     .precio{
         margin: 1rem;
     }
+
+    .cuidados{
+        grid-template-rows: 3/4;
+        grid-column: 1/4;
+    }
+
+
+    /*Media Query para el carrousel, segundo quiebre 1024px, mas margen superior para dejarlo centrado*/
+
+    .contenedorCarrousel{
+        margin-top: 200px;
+    }
+
 
 
 
