@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 
-//*variables sass de color, fuente y estilos de box-shadow*//
+//*variables sass de color, fuente , estilos de box-shadow, distintos anchos, altos, margenes y transformaciones*//
 
 $color1: white;
 $color2: darkorange;
@@ -29,6 +29,7 @@ $transicion: all 0.75s;
 
 $transformacion1: scale(1.2);
 $transformacion2: scale(1.1);
+$transformacion3: scaleY(1.2);
 
 
 
@@ -78,7 +79,7 @@ body{
 
 h5:hover{
     color: $color2;
-    transform: $transformacion2;
+    transform: $transformacion3;
 }
 
 

@@ -47,8 +47,8 @@ body {
 
 h5:hover {
   color: darkorange;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scaleY(1.2);
+          transform: scaleY(1.2);
 }
 
 .cuerpoIndex {
