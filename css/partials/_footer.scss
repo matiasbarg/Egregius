@@ -1,0 +1,60 @@
+footer{
+    height: ($alto1 / 4) + 5px;
+    width: $ancho1 + 20%;
+    background-color: $color5;
+    color: $color3;
+    font-size: $margen3 / 2;
+    font-weight: $negrita;
+    letter-spacing: $margen3 / 20;
+    text-align: center;
+    box-shadow: $shadow2;
+    position: fixed;
+    bottom: 0;
+}
+.fa-whatsapp{
+    color: $color3;
+    font-size: $margen3 / 2;
+    &:hover{
+        color: $color2;
+    }
+}
+.fa-youtube{
+    color: $color3;
+    font-size: $margen3 / 2;
+    &:hover{
+        color: $color2;
+    }
+}
+.fa-instagram{
+    color: $color3;
+    font-size: $margen3 / 2;
+    &:hover{
+        color: $color2;
+    }
+}
+.fa-facebook{
+    color: $color3;
+    font-size: $margen3 / 2;
+    &:hover{
+        color: $color2;
+    }
+}
+.fa-angles-up{
+    color: $color3;
+    font-size: $margen3 / 2;
+    background-color: $color6;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 12%;
+    right: 3%;
+    padding: 15px;
+    border: solid;
+    border-color: $color3;
+    transition: $transicion;
+    box-shadow: $shadow;
+    &:hover{
+        background-color: $color2;
+        transform: $transformacion2;
+        transition: $transicion;
+    }
+}

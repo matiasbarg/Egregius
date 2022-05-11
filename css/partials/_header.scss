@@ -1,0 +1,31 @@
+.sec{
+    width: $ancho1;
+    height: $alto1;
+}
+.navbar{
+    background-image: url("../img/banner1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 18vh;
+    box-shadow: $shadow;
+}
+.nav-link{
+    font-weight: $negrita;
+    color: $color1;
+    
+}
+.navbar-brand{
+    transition: $transicion;
+        &:hover{
+            transform: $transformacion1;
+            transition: $transicion;
+    }
+}
+h5{
+    color: $color1;
+    &:hover{
+        color: $color2;
+        transform: $transformacion3;
+    }
+}

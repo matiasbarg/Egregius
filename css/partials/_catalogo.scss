@@ -1,0 +1,128 @@
+.cuerpoCatalogo{
+    width: $ancho1 + 20%;
+    display: grid;
+    justify-content: space-around;
+    margin-top: $margen3 / 2;
+    margin-bottom: $margen3 + 1;
+    gap: $margen3;
+}
+.item{
+    min-width: $ancho2;
+    height: ($alto1 * 2) + ($margen2 * 3);
+    border: solid 2px $color3; 
+    font-family: $font1;
+    font-size: $margen3 / 2;
+    font-weight: $negrita;
+    padding: $margen3 / 4;
+    background-color: $color6;
+    text-align: center;
+    box-shadow: $shadow;
+    img{
+        max-width: $ancho2;
+        margin: $margen3 / 4;
+        transition: $transicion;
+        &:hover{
+            transform: $transformacion2;
+            transition: $transicion;
+        }
+    }
+    p{
+        font-size: ($margen3 / 2) - 0.2;
+    }
+}
+.precio{
+    background-color: $color5;
+    
+}
+.botonCatalogo{
+    display: flex;
+    display: inline-block;
+    background-color: $color1;
+    margin: $margen3 / 4 auto ;
+    border-radius: ($margen3 / 20) * 3;
+    font-weight: $negrita;
+    letter-spacing: $margen3 / 20;
+    cursor: pointer;
+    font-size: $margen3 / 2;
+    padding: ($margen3 / 20) * 3;
+    &:hover{
+        background-color: $color2;
+    }
+}
+.cuidados{
+    background-color: $color5;
+    text-align: center;
+    padding: 1.5rem;
+    justify-content: space-between;
+    h3{
+        text-decoration: underline;
+        display: inline-block;
+    }
+    ul{
+        list-style-type: none;
+        margin-right: $margen1 - 10px;
+        margin-top: $margen1 / 2;
+    }
+}
+
+//*Agrego un bucle modificando el color de fondo de los items del catalogo*//
+
+@for $in from 1 through 6 {
+    .catalogo#{$in} {
+    background-color: lighten($color7, $in * 8%);
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .cuerpoCatalogo{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .item{    
+        height: ($alto1 * 2) + 180px;
+        img{
+            max-width: $ancho2;
+        }
+    }
+    .cuidados{
+        grid-template-rows: 4/5;
+        grid-column: 1/3;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cuerpoCatalogo{
+        margin-bottom: $margen1;
+        margin-left: auto;
+        margin-right: auto;
+        width: $ancho1 + 10%;
+        padding: $margen3 / 2;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .item{
+        min-width: $ancho2;
+        height: $alto1 * 2 + 50;
+        font-size: $margen3 / 2;
+        padding: $margen3 / 10;
+        text-align: center;
+        h3{
+            font-size: $margen3 / 2;
+        }
+        img{
+            max-width: 200px;
+            margin: $margen3 / 2;
+        }
+        p{
+            font-size: ($margen2 / 4) + 0.1;
+        }
+    }
+    .precio{
+        margin: $margen3 / 2;
+    }
+    .cuidados{
+        grid-template-rows: 3/4;
+        grid-column: 1/4;
+    }
+}
+
