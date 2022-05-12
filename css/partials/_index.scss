@@ -1,4 +1,4 @@
-.cuerpoIndex{
+.cuerpoIndex {
     color: $color3;
     margin: $margen2 $margen2;
     text-align: center;
@@ -6,20 +6,23 @@
     font-weight: $negrita;
     letter-spacing: $margen3 / 20;
 }
-.imagenIndex{
+
+.imagenIndex {
     display: flex;
     width: $ancho1 + 20%;
     margin-top: $margen2;
     margin-bottom: $margen2;
     box-shadow: $shadow;
 }
-h2{
+
+h2 {
     font-size: 160%;
     text-align: center;
     color: $color3;
     margin-bottom: $margen2;
 }
-#video{
+
+#video {
     display: flex;
     justify-content: space-around;
     text-align: center;

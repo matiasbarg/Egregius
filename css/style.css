@@ -28,28 +28,28 @@ body {
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.nav-link {
+.navbar .nav-link {
   font-weight: 600;
   color: white;
 }
 
-.navbar-brand {
+.navbar .navbar-brand {
   -webkit-transition: all 0.75s;
   transition: all 0.75s;
 }
 
-.navbar-brand:hover {
+.navbar .navbar-brand:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: all 0.75s;
   transition: all 0.75s;
 }
 
-h5 {
+.navbar h5 {
   color: white;
 }
 
-h5:hover {
+.navbar h5:hover {
   color: darkorange;
   -webkit-transform: scaleY(1.2);
           transform: scaleY(1.2);

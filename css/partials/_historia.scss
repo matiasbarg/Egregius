@@ -1,23 +1,27 @@
-.cuerpoHist{
+.cuerpoHist {
     width: $ancho1;
     display: flex;
     padding: $margen3;
     justify-content: space-around;
-    img{
+
+    img {
         margin-top: $margen1 - 10px;
         margin-bottom: $margen1 / 2;
     }
 }
-.containerHist{
-    img{
+
+.containerHist {
+    img {
         width: $ancho1 + 20%;
         transition: $transicion;
-        &:hover{
+
+        &:hover {
             transform: $transformacion2;
             transition: $transicion;
         }
     }
-    p{
+
+    p {
         color: $color3;
         font-size: 100%;
         font-weight: $negrita;

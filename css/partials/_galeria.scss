@@ -1,7 +1,8 @@
-.bodyGaleria{
+.bodyGaleria {
     background-color: $color4;
 }
-.contenedorCarrousel{
+
+.contenedorCarrousel {
     margin-top: $margen1 - 10px;
     margin-bottom: $margen2;
     background-color: $color3;
@@ -9,7 +10,7 @@
 
 @media only screen and (min-width: 720px) {
 
-    .contenedorCarrousel{
+    .contenedorCarrousel {
         margin-top: $margen2;
     }
 
@@ -17,7 +18,7 @@
 
 @media only screen and (min-width: 1024px) {
 
-    .contenedorCarrousel{
+    .contenedorCarrousel {
         margin-top: $margen1 * 2;
     }
 

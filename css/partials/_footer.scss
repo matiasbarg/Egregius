@@ -1,4 +1,4 @@
-footer{
+footer {
     height: ($alto1 / 4) + 5px;
     width: $ancho1 + 20%;
     background-color: $color5;
@@ -11,35 +11,44 @@ footer{
     position: fixed;
     bottom: 0;
 }
-.fa-whatsapp{
+
+.fa-whatsapp {
     color: $color3;
     font-size: $margen3 / 2;
-    &:hover{
+
+    &:hover {
         color: $color2;
     }
 }
-.fa-youtube{
+
+.fa-youtube {
     color: $color3;
     font-size: $margen3 / 2;
-    &:hover{
+
+    &:hover {
         color: $color2;
     }
 }
-.fa-instagram{
+
+.fa-instagram {
     color: $color3;
     font-size: $margen3 / 2;
-    &:hover{
+
+    &:hover {
         color: $color2;
     }
 }
-.fa-facebook{
+
+.fa-facebook {
     color: $color3;
     font-size: $margen3 / 2;
-    &:hover{
+
+    &:hover {
         color: $color2;
     }
 }
-.fa-angles-up{
+
+.fa-angles-up {
     color: $color3;
     font-size: $margen3 / 2;
     background-color: $color6;
@@ -52,7 +61,8 @@ footer{
     border-color: $color3;
     transition: $transicion;
     box-shadow: $shadow;
-    &:hover{
+
+    &:hover {
         background-color: $color2;
         transform: $transformacion2;
         transition: $transicion;
