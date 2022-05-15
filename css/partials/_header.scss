@@ -1,38 +1,54 @@
-.sec {
-    width: $ancho1;
-    height: $alto1;
+/*header*/
+
+$sombra1: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+$altura1: 18vh;
+
+
+$transcion1: all 0.75s; 
+
+$color1: #fff;
+$color2: #111;
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar {
-    background-image: url("../img/banner1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: soft-light;
-    min-height: 18vh;
-    box-shadow: $shadow;
-
-    .nav-link {
-        font-weight: $negrita;
-        color: $color1;
-
-    }
-
-    .navbar-brand {
-        transition: $transicion;
-
-        &:hover {
-            transform: $transformacion1;
-            transition: $transicion;
+        background-image: url("/img/banner1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: soft-light;
+        min-height: $altura1;
+        box-shadow:$sombra1;
+        .nav-link {
+            font-weight: 600;
+            color: $color1;
+        }
+        .navbar-brand {
+            -webkit-transition: $transcion1;
+            transition: $transcion1;
+            &:hover{
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+                -webkit-transition: $transcion1;
+                transition: $transcion1;
+            }
+        }
+        h5 {
+            color: $color1;
+            border-radius: 40px;
+            padding: 5px;
+            &:hover{
+                background-color: $color1;
+                color: $color2;
         }
     }
-
-    h5 {
-        color: $color1;
-
-        &:hover {
-            color: $color2;
-            transform: $transformacion3;
-        }
     }
 
-}
+

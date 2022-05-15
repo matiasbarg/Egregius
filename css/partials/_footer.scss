@@ -1,70 +1,229 @@
+/*FOOTER*/
+$sombra1: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+$altura1: 18vh;
+
+$ancho1: 100%;
+
+
+$transcion1: all 0.75s; 
+
+$color1: #fff;
+$color2: #111;
+$color3: #999;
+
+$gradiente1: linear-gradient(45deg, #bd770d, rgba(170, 133, 13, 0.8));
+
+$bordesredond: 4px;
+
+$tiempo1: 0.5s;
+
+
+
 footer {
-    height: ($alto1 / 4) + 5px;
-    width: $ancho1 + 20%;
-    background-color: $color5;
-    color: $color3;
-    font-size: $margen3 / 2;
-    font-weight: $negrita;
-    letter-spacing: $margen3 / 20;
-    text-align: center;
-    box-shadow: $shadow2;
-    position: fixed;
+    position: relative;
     bottom: 0;
+    width: $ancho1;
+    height: auto;
+    padding: 50px 100px;
+    background: $color2;
+    display: flex;
+    justify-content: space-between;
 }
 
-.fa-whatsapp {
-    color: $color3;
-    font-size: $margen3 / 2;
+footer h2 {
+    font-size: 20px;
+}
 
-    &:hover {
-        color: $color2;
+footer .container2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container2 .sec {
+    margin-right: 30px;
+}
+
+footer .container2 .sec.nosotros {
+    width: 40%;
+}
+
+footer .container2 .sec.nosotros h2 {
+    position: relative;
+    color: $color1;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container2 .sec.nosotros h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+
+footer p {
+    color: $color3;
+}
+
+.sci {
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: $color1;
+    font-size: 20px;
+}
+
+.sci li a:hover {
+    background: $color1;
+    color: $color2;
+}
+
+.quickLinks {
+    position: relative;
+    width: 25%;
+}
+
+.quickLinks h2 {
+    position: relative;
+    color: $color1;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.quickLinks h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+.quickLinks ul li {
+    list-style: none;
+}
+
+.quickLinks ul li a {
+    color: $color3;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quickLinks ul li a:hover {
+    color: $color1;
+}
+
+.contacto {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contacto h2 {
+    position: relative;
+    color: $color1;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.contacto h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+.contacto .info {
+    position: relative;
+}
+
+.contacto .info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contacto .info li span:nth-child(1) {
+    color: $color1;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contacto .info li span {
+    color: $color3;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.contacto .info li a {
+    color: $color3;
+    text-decoration: none;
+}
+
+.contacto .info li a:hover {
+    color: $color1;
+}
+
+.copyrightText {
+    width: $ancho1;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: $color3;
+}
+
+/*mediaqueri para el footer*/
+
+@media (max-width: 991px) {
+
+    footer {
+        padding: 40px;
+    }
+
+    footer .container2 {
+        flex-direction: column;
+    }
+
+    footer .container2 .sec {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    footer .container2 .sec.nosotros,
+    .quickLinks,
+    .contacto {
+        width: $ancho1;
+    }
+
+    .copyrightText {
+        padding: 8px 40px;
     }
 }
 
-.fa-youtube {
-    color: $color3;
-    font-size: $margen3 / 2;
-
-    &:hover {
-        color: $color2;
-    }
-}
-
-.fa-instagram {
-    color: $color3;
-    font-size: $margen3 / 2;
-
-    &:hover {
-        color: $color2;
-    }
-}
-
-.fa-facebook {
-    color: $color3;
-    font-size: $margen3 / 2;
-
-    &:hover {
-        color: $color2;
-    }
-}
-
-.fa-angles-up {
-    color: $color3;
-    font-size: $margen3 / 2;
-    background-color: $color6;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 12%;
-    right: 3%;
-    padding: 15px;
-    border: solid;
-    border-color: $color3;
-    transition: $transicion;
-    box-shadow: $shadow;
-
-    &:hover {
-        background-color: $color2;
-        transform: $transformacion2;
-        transition: $transicion;
-    }
-}

@@ -1,31 +1,112 @@
-.cuerpoIndex {
-    color: $color3;
-    margin: $margen2 $margen2;
-    text-align: center;
-    font-size: 100%;
-    font-weight: $negrita;
-    letter-spacing: $margen3 / 20;
-}
+$sombra1: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
-.imagenIndex {
+
+$altura1: 18vh;
+
+$ancho1: 100%;
+
+
+$transcion1: all 0.75s; 
+
+$color1: #fff;
+$color2: #111;
+
+$bordesredond: 4px;
+
+
+.container {
+    position: relative;
+    top: $altura1 + 2vh;
     display: flex;
-    width: $ancho1 + 20%;
-    margin-top: $margen2;
-    margin-bottom: $margen2;
-    box-shadow: $shadow;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin-bottom: 190px;
+    .card {
+        position: relative;
+        width: 320px;
+        height: 320px;
+        margin: 15px;
+        overflow: hidden;
+        border-radius: $bordesredond;
+        box-shadow: $sombra1;
+    }
+    .imgBx, .contentBx{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $ancho1;
+        height: $ancho1;
+    }
 }
 
-h2 {
-    font-size: 160%;
-    text-align: center;
-    color: $color3;
-    margin-bottom: $margen2;
+
+.container .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $ancho1;
+    height: $ancho1;
+    object-fit: cover;
+    border-radius: $bordesredond;
 }
 
-#video {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    size: $ancho1 - 30%;
-    margin-bottom: ($margen3 * 2) + 1;
+.container .card .contentBx::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $ancho1;
+    height: $ancho1;
+    background: #fff;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+    transition-delay: 0.3s;
+
+}
+
+.container .card:hover .contentBx::before {
+    transform: scaleX(1);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: left;
+    transition-delay: 0s;
+
+}
+
+.container{
+    .card{
+        .contentBx{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        }
+}
+
+.container .card .contentBx .content {
+    position: relative;
+    padding: 30px;
+    z-index: 1;
+    transition: 0.5s;
+    transform: translateX(-300px);
+    transition-delay: 0s;
+    h3 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        font-weight: 300;
+    
+    }
+}
+
+.container .card:hover .contentBx .content {
+    transform: translateX(0px);
+    transition-delay: 0.3s;
 }

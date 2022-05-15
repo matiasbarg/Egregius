@@ -1,19 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 @import "partials/variables"; //import de partial con todas las variables definidas//
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
-}
-body{
-    font-family: $font1;
-    background-color: $color1;
     box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    background: #ede7f6;
 }
 @import "partials/header"; //import con partial de estilo del header//
 @import "partials/index"; //import con partial de estilo seccion index//
 @import "partials/historia"; //import con partial de estilo seccion historia//
-@import "partials/galeria"; ////import con partial de estilo seccion galeria//
 @import "partials/catalogo"; //import con partial de estilo seccion catalogo//
-@import "partials/contacto"; //import con partial de estilo seccion contacto//
 @import "partials/footer"; //import con partial de estilo del footer//
+@import "partials/galeria";
+@import "partials/contacto";
