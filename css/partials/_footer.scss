@@ -1,7 +1,4 @@
-
-
-
-
+/*FOOTER*/
 
 footer {
     position: map-get($estilos , position );
@@ -177,6 +174,7 @@ footer p {
     padding: 8px 80px;
     text-align: center;
     color: $color3;
+    display: inline;
     h1{
         @extend .copyrightText;
         font-size: 1rem;

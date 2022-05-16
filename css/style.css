@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+/*VARLABLES, MIXIN, BUCLE y MAPA*/
 .catalogo1 {
   background-color: #d5860f;
 }
@@ -24,6 +25,7 @@
   background-color: #f5bf6e;
 }
 
+/*GENERAL*/
 * {
   margin: 0;
   padding: 0;
@@ -40,6 +42,7 @@ body {
   flex-direction: column;
 }
 
+/*HEADER*/
 header {
   position: absolute;
   top: 0;
@@ -80,6 +83,7 @@ header {
   color: #111;
 }
 
+/*INDEX*/
 .container {
   position: relative;
   top: 20vh;
@@ -168,6 +172,7 @@ header {
   transition-delay: 0.3s;
 }
 
+/*HISTORIA*/
 .container3 {
   position: relative;
   top: 20vh;
@@ -241,6 +246,7 @@ header {
   opacity: 1;
 }
 
+/*CATALOGO*/
 .cuerpoCatalogo {
   width: 100%;
   position: relative;
@@ -391,6 +397,7 @@ header {
     grid-column: 1/4;
   }
 }
+/*FOOTER*/
 footer {
   position: relative;
   display: flex;
@@ -566,6 +573,7 @@ footer p {
   padding: 8px 80px;
   text-align: center;
   color: #999;
+  display: inline;
 }
 .copyrightText h1 {
   font-size: 1rem;
@@ -596,6 +604,7 @@ footer p {
     padding: 8px 40px;
   }
 }
+/*GALERIA*/
 .bodyGaleria {
   background-color: black;
 }
