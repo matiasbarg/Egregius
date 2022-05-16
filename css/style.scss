@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
-@import "partials/variables"; //import de partial con todas las variables definidas//
+@import "partials/variables"; //import de partial con todas las variables definidas, Mixing y Bucle//
 * {
     margin: 0;
     padding: 0;
@@ -14,12 +14,12 @@ body {
     width: 100%;
     background: #fff;
     flex-direction: column;
-    background: #ede7f6;
 }
+
 @import "partials/header"; //import con partial de estilo del header//
 @import "partials/index"; //import con partial de estilo seccion index//
 @import "partials/historia"; //import con partial de estilo seccion historia//
 @import "partials/catalogo"; //import con partial de estilo seccion catalogo//
 @import "partials/footer"; //import con partial de estilo del footer//
-@import "partials/galeria";
-@import "partials/contacto";
+@import "partials/galeria"; //import con partial de estilo de seccion Galeria//
+@import "partials/contacto"; //import con partial de estilo de seccion Contacto//

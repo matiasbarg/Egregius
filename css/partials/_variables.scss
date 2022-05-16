@@ -1,3 +1,5 @@
+//VARLABLES//
+
 $sombra1: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 $altura1: 18vh;
@@ -17,3 +19,28 @@ $gradiente1: linear-gradient(45deg, #bd770d, rgba(170, 133, 13, 0.8));
 $bordesredond: 4px;
 
 $tiempo1: 0.5s;
+
+//MIXING//
+
+@mixin flexcentrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//BUCLE//
+
+@for $in from 1 through 6 {
+    .catalogo#{$in} {
+        background-color: lighten(#bd770d, $in * 5%);
+    }
+}
+
+//MAPA//
+
+$estilos: (
+    position: relative,
+    display: flex,
+    justify-content: space-between 
+);
+

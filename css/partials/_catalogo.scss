@@ -1,6 +1,6 @@
 .cuerpoCatalogo {
     width: $ancho1;
-    position: relative;
+    position: map-get($estilos , position );
     top: $altura1;
     display: -ms-grid;
     display: grid;
@@ -48,7 +48,7 @@
 .botonCatalogo {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: map-get($estilos , display );
     display: inline-block;
     background: rgba(240, 206, 96, 0.8);
     margin: 0.5rem auto;
@@ -74,7 +74,7 @@
     padding: 1.5rem;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: map-get($estilos , justify-content );
 
     h3 {
         display: inline-block;
@@ -87,12 +87,6 @@
         list-style-type: none;
         margin-right: 30px;
         margin-top: 20px;
-    }
-}
-
-@for $in from 1 through 6 {
-    .catalogo#{$in} {
-        background-color: lighten(#bd770d, $in * 5%);
     }
 }
 
@@ -125,7 +119,7 @@
 
 @media only screen and (min-width: 1024px) {
     .cuerpoCatalogo {
-        margin-bottom: 140px;
+        margin-bottom: 250px;
         margin-left: auto;
         margin-right: auto;
         width: $ancho1 - 10%;
