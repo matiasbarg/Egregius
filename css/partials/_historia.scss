@@ -1,13 +1,15 @@
 
 
 .container3 {
-    position: map-get($estilos , position );
+    position: relative;
     top: $altura1 + 2vh;
-    @include flexcentrado;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 130px;
     .hexagono {
-        position: map-get($estilos , position );
+        position: relative;
         width: 350px;
         height: 400px;
         margin: 50px 20px 70px;
@@ -48,7 +50,9 @@
                 left: 0;
                 width: $ancho1;
                 height: $ancho1;
-                @include flexcentrado;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 padding: 20px;
                 text-align: center;
                 background: $gradiente1;
