@@ -174,10 +174,15 @@ footer p {
 .copyrightText {
     width: $ancho1;
     background: #181818;
-    padding: 8px 100px;
+    padding: 8px 80px;
     text-align: center;
     color: $color3;
+    h1{
+        @extend .copyrightText;
+        font-size: 1rem;
+    }
 }
+
 
 /*mediaqueri para el footer*/
 

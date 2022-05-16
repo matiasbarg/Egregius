@@ -560,12 +560,15 @@ footer p {
   color: #fff;
 }
 
-.copyrightText {
+.copyrightText, .copyrightText h1 {
   width: 100%;
   background: #181818;
-  padding: 8px 100px;
+  padding: 8px 80px;
   text-align: center;
   color: #999;
+}
+.copyrightText h1 {
+  font-size: 1rem;
 }
 
 /*mediaqueri para el footer*/
@@ -589,7 +592,7 @@ footer p {
     width: 100%;
   }
 
-  .copyrightText {
+  .copyrightText, .copyrightText h1 {
     padding: 8px 40px;
   }
 }
