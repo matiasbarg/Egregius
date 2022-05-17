@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 @import "partials/variables"; //import de partial con todas las variables definidas, Mixing y Bucle//
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
 /*GENERAL*/
 
 * {
@@ -17,6 +16,7 @@ body {
     width: 100%;
     background: #fff;
     flex-direction: column;
+    font-family: $font1;
 }
 
 @import "partials/header"; //import con partial de estilo del header//
