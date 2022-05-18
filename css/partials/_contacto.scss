@@ -1,4 +1,4 @@
-/*Contacto*/
+/*CONTACTO*/
 
 .contactUs{
     position: absolute;
@@ -84,7 +84,7 @@
                 border: 1px solid $color3;
             }
             textarea{
-                @extend input;  //*uso de EXTEND*//
+                @extend input;  
                 resize: none;
                 min-height: 220px;
                 margin-bottom: $margen1 / 4;
@@ -110,6 +110,8 @@
         }
     }
 }
+
+/*Informacion*/
 
 .info{
     background: $color2;
@@ -146,6 +148,7 @@
     }
 }
 
+/*Mapa*/
 .map{
     padding: 0;
     iframe{
@@ -154,7 +157,7 @@
     }
 }
 
-/*diseño respònsive*/
+/*BREAKPOINTS*/
 
 @media (max-width: 991px){
     
@@ -197,3 +200,5 @@
     }
     
 }
+
+/*Fin CONTACTO*/

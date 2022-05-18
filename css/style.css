@@ -1,5 +1,3 @@
-@charset "UTF-8";
-/*VARLABLES, MIXIN, BUCLE y MAPA*/
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap");
 .catalogo1 {
   background-color: #d5860f;
@@ -53,6 +51,7 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
+/*Fin GENERAL*/
 /*HEADER*/
 header {
   position: absolute;
@@ -100,10 +99,11 @@ header {
   color: #111;
 }
 
+/*Fin HEADER*/
 /*INDEX*/
 .container {
   position: relative;
-  top: 20vh;
+  top: 22vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,7 +116,7 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 1100px;
-  margin-bottom: 190px;
+  margin-bottom: 250px;
 }
 
 .container .card {
@@ -225,11 +225,11 @@ header {
           transition-delay: 0.3s;
 }
 
+/*YOUTUBE*/
 .containerVideo {
   width: 100%;
   max-height: 400px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,14 +243,21 @@ header {
   text-align: center;
 }
 
+.containerVideo h3 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
 .containerVideo iframe {
   max-width: 320px;
   max-height: 250px;
-  margin-top: 20px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .containerVideo p {
-  margin-top: 20px;
   padding: 30px;
 }
 
@@ -258,10 +265,11 @@ header {
   color: #111;
 }
 
+/*Fin HEADER*/
 /*HISTORIA*/
 .container3 {
   position: relative;
-  top: 20vh;
+  top: 22vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,7 +281,7 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 160px;
+  margin-bottom: 200px;
 }
 
 .container3 .hexagono {
@@ -359,6 +367,7 @@ header {
   opacity: 1;
 }
 
+/*Fin Historia*/
 /*CATALOGO*/
 .cuerpoCatalogo {
   width: 100%;
@@ -454,6 +463,7 @@ header {
   margin-top: 20px;
 }
 
+/*BREAKPONINTS, GRID 720px y 1024px*/
 @media only screen and (min-width: 720px) {
   .cuerpoCatalogo {
     -ms-grid-columns: 1fr 1fr;
@@ -722,7 +732,7 @@ footer p {
   font-size: 1rem;
 }
 
-/*mediaqueri para el footer*/
+/*BREAKPOINT 991px para el footer*/
 @media (max-width: 991px) {
   footer {
     padding: 40px;
@@ -760,7 +770,8 @@ footer p {
   background-color: black;
 }
 
-/*Contacto*/
+/*Fin GALERIA*/
+/*CONTACTO*/
 .contactUs {
   position: absolute;
   top: 18vh;
@@ -918,6 +929,7 @@ footer p {
   color: #999;
 }
 
+/*Informacion*/
 .info {
   background: #111;
 }
@@ -969,6 +981,7 @@ footer p {
   color: #fff;
 }
 
+/*Mapa*/
 .map {
   padding: 0;
 }
@@ -978,7 +991,7 @@ footer p {
   height: 100%;
 }
 
-/*diseño respònsive*/
+/*BREAKPOINTS*/
 @media (max-width: 991px) {
   .contactUs {
     background: #bd770d;
@@ -1023,4 +1036,6 @@ footer p {
     margin-right: 0;
   }
 }
+
+/*Fin CONTACTO*/
 /*# sourceMappingURL=style.css.map */

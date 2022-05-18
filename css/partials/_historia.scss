@@ -2,10 +2,10 @@
 
 .container3 {
     position: map-get($estilos , position );
-    top: $altura1 + 2vh;
+    top: $altura1 + 4vh;
     @include flexcentrado;
     flex-wrap: wrap;
-    margin-bottom: 160px;
+    margin-bottom: 200px;
     .hexagono {
         position: map-get($estilos , position );
         width: 350px;
@@ -68,3 +68,5 @@
 .container3 .hexagono:hover .forma .contenido {
     opacity: 1;
 }
+
+/*Fin Historia*/

@@ -19,6 +19,8 @@ body {
     font-family: $font1;
 }
 
+/*Fin GENERAL*/
+
 @import "partials/header"; //import con partial de estilo del header//
 @import "partials/index"; //import con partial de estilo seccion index//
 @import "partials/historia"; //import con partial de estilo seccion historia//
