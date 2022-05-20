@@ -1,11 +1,9 @@
 /*HISTORIA*/
 
 .container3 {
-    position: map-get($estilos , position );
-    top: $altura1 + 4vh;
     @include flexcentrado;
     flex-wrap: wrap;
-    margin-bottom: 200px;
+    margin: 50px 0;
     .hexagono {
         position: map-get($estilos , position );
         width: 350px;

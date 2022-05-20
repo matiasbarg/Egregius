@@ -1,44 +1,79 @@
 /*HEADER*/
 
-header {
-    position: absolute;
+header{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
-}
-
-.navbar {
-        background-image: url("../img/banner1.jpg");
-        background-size: cover;
-        background-position: center;
-        background-blend-mode: soft-light;
-        min-height: $altura1;
-        box-shadow:$sombra1;
-        .nav-link {
-            font-weight: 600;
-            color: $color1;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $gradiente2;
+    box-shadow: $sombra1;
+    img{
+        padding: 0 20px;
+        max-width: 200px;
+        transition: $transcion1;
+        &:hover{
+            transform: scale(1.2);
         }
-        .navbar-brand {
-            -webkit-transition: $transcion1;
-            transition: $transcion1;
-            &:hover{
-                -webkit-transform: scale(1.2);
-                transform: scale(1.2);
-                -webkit-transition: $transcion1;
-                transition: $transcion1;
+    }
+    .navigation{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px 0;
+        li{
+            list-style: none;
+            margin: 5px 15px;
+            a{
+                color: $color1;
+                text-decoration: none;
+                font-weight: 600;
+                letter-spacing: 1;
+                border-radius: 40px;
+                padding: 5px 10px;
+                transition: all 0.4s;
+                &:hover{
+                    text-shadow: 1px 1px $color1;
+                    color: $color2;
+                    background: $color5;
+                }
             }
-        }
-        h5 {
-            color: $color1;
-            border-radius: 40px;
-            padding: 8px 10px;
-            &:hover{
-                background-color: $color1;
-                color: $color2;
         }
     }
 }
 
-/*Fin HEADER*/
+#activo{
+    text-shadow: 1px 1px $color1;
+    color: $color2;
+    background: $color5;
+}
 
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+        a{
+            padding: 0 10px;;
+        }
+}
+}
+
+@media (max-width: 400px){
+    header{
+        flex-direction: column;
+        img{
+            padding: 0 15px;
+        }
+        a{
+            padding: 0 5px;;
+        }
+        .navigation{
+            margin: 5px 0px;
+            li{
+                margin: 0;
+            }
+            }
+        }
+
+}

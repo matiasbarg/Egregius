@@ -2,14 +2,11 @@
 
 .cuerpoCatalogo {
     width: $ancho1;
-    position: map-get($estilos , position );
-    top: $altura1;
     display: -ms-grid;
     display: grid;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    margin-top: 1rem;
-    margin-bottom: 200px;
+    margin: 50px 0px;
     gap: 2rem;
 
     .item {
@@ -45,7 +42,8 @@
 }
 
 .precio {
-    background-color: #555F56;
+    background-color: $color6;
+    color: $color1;
 }
 
 .botonCatalogo {
@@ -71,7 +69,7 @@
 
 
 .cuidados {
-    background: $color2;
+    background: $color6;
     color: $color3;
     text-align: center;
     padding: 1.5rem;
@@ -82,7 +80,7 @@
     h3 {
         display: inline-block;
         color: $color1;
-        text-decoration: underline red;
+        text-decoration: underline $color4;
         line-height: -10x;
     }
 
@@ -122,7 +120,7 @@
 
 @media only screen and (min-width: 1024px) {
     .cuerpoCatalogo {
-        margin-bottom: 250px;
+        margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
         width: $ancho1 - 10%;

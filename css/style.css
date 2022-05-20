@@ -54,56 +54,113 @@ body {
 /*Fin GENERAL*/
 /*HEADER*/
 header {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
-}
-
-.navbar {
-  background-image: url("../img/banner1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: soft-light;
-  min-height: 18vh;
+  min-height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #002440), to(#0A548C));
+  background: linear-gradient(90deg, #002440 40%, #0A548C);
   -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.navbar .nav-link {
-  font-weight: 600;
-  color: #fff;
-}
-
-.navbar .navbar-brand {
+header img {
+  padding: 0 20px;
+  max-width: 200px;
   -webkit-transition: all 0.75s;
   transition: all 0.75s;
 }
 
-.navbar .navbar-brand:hover {
+header img:hover {
   -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-  -webkit-transition: all 0.75s;
-  transition: all 0.75s;
+          transform: scale(1.2);
 }
 
-.navbar h5 {
+header .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+header .navigation li {
+  list-style: none;
+  margin: 5px 15px;
+}
+
+header .navigation li a {
   color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1;
   border-radius: 40px;
-  padding: 8px 10px;
+  padding: 5px 10px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-.navbar h5:hover {
-  background-color: #fff;
+header .navigation li a:hover {
+  text-shadow: 1px 1px #fff;
   color: #111;
+  background: #D99125;
 }
 
-/*Fin HEADER*/
+#activo {
+  text-shadow: 1px 1px #fff;
+  color: #111;
+  background: #D99125;
+}
+
+@media (max-width: 700px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header a {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header img {
+    padding: 0 15px;
+  }
+  header a {
+    padding: 0 5px;
+  }
+  header .navigation {
+    margin: 5px 0px;
+  }
+  header .navigation li {
+    margin: 0;
+  }
+}
+
 /*INDEX*/
 .container {
-  position: relative;
-  top: 22vh;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,7 +173,7 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 1100px;
-  margin-bottom: 250px;
+  margin-bottom: 80px;
 }
 
 .container .card {
@@ -165,8 +222,8 @@ header {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   -webkit-transform-origin: right;
           transform-origin: right;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
 
 .container .card:hover .contentBx::before {
@@ -210,12 +267,14 @@ header {
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: #D99125;
 }
 
 .container .card .contentBx .content p {
   font-size: 1rem;
   line-height: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
+  color: #002440;
 }
 
 .container .card:hover .contentBx .content {
@@ -246,6 +305,7 @@ header {
 .containerVideo h3 {
   font-weight: 600;
   font-size: 2rem;
+  color: #BD770D;
 }
 
 .containerVideo iframe {
@@ -259,17 +319,16 @@ header {
 
 .containerVideo p {
   padding: 30px;
+  color: #002440;
 }
 
 .containerVideo p a {
-  color: #111;
+  color: #0A548C;
 }
 
 /*Fin HEADER*/
 /*HISTORIA*/
 .container3 {
-  position: relative;
-  top: 22vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,7 +340,7 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 200px;
+  margin: 50px 0;
 }
 
 .container3 .hexagono {
@@ -349,7 +408,7 @@ header {
           align-items: center;
   padding: 20px;
   text-align: center;
-  background: linear-gradient(45deg, #bd770d, rgba(170, 133, 13, 0.8));
+  background: linear-gradient(45deg, #BD770D, rgba(217, 145, 37, 0.8));
   color: #fff;
   opacity: 0;
   -webkit-transition: 0.5s;
@@ -371,14 +430,11 @@ header {
 /*CATALOGO*/
 .cuerpoCatalogo {
   width: 100%;
-  position: relative;
-  top: 18vh;
   display: -ms-grid;
   display: grid;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin-top: 1rem;
-  margin-bottom: 200px;
+  margin: 50px 0px;
   gap: 2rem;
 }
 
@@ -415,7 +471,8 @@ header {
 }
 
 .precio {
-  background-color: #555F56;
+  background-color: #002440;
+  color: #fff;
 }
 
 .botonCatalogo {
@@ -440,7 +497,7 @@ header {
 }
 
 .cuidados {
-  background: #111;
+  background: #002440;
   color: #999;
   text-align: center;
   padding: 1.5rem;
@@ -452,8 +509,8 @@ header {
 .cuidados h3 {
   display: inline-block;
   color: #fff;
-  -webkit-text-decoration: underline red;
-          text-decoration: underline red;
+  -webkit-text-decoration: underline #BD770D;
+          text-decoration: underline #BD770D;
   line-height: -10x;
 }
 
@@ -488,7 +545,7 @@ header {
 
 @media only screen and (min-width: 1024px) {
   .cuerpoCatalogo {
-    margin-bottom: 250px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -529,18 +586,14 @@ header {
 
 /*FOOTER*/
 footer {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  bottom: 0;
   width: 100%;
   height: auto;
   padding: 50px 100px;
-  background: #111;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #002440), to(#0A548C));
+  background: linear-gradient(90deg, #002440 40%, #0A548C);
 }
 
 footer h2 {
@@ -584,7 +637,7 @@ footer .container2 .sec.nosotros h2:before {
   left: 0;
   width: 50px;
   height: 2px;
-  background: #f00;
+  background: #D99125;
 }
 
 footer p {
@@ -606,7 +659,7 @@ footer p {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: #181818;
+  background: #0A548C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -647,7 +700,7 @@ footer p {
   left: 0;
   width: 50px;
   height: 2px;
-  background: #f00;
+  background: #D99125;
 }
 
 .quickLinks ul li {
@@ -684,11 +737,12 @@ footer p {
   left: 0;
   width: 50px;
   height: 2px;
-  background: #f00;
+  background: #D99125;
 }
 
 .contacto .info {
   position: relative;
+  background: none;
 }
 
 .contacto .info li {
@@ -721,7 +775,7 @@ footer p {
 
 .copyrightText, .copyrightText h1 {
   width: 100%;
-  background: #181818;
+  background: #142029;
   padding: 8px 80px;
   text-align: center;
   color: #999;
@@ -763,23 +817,24 @@ footer p {
 }
 
 .contenedorCarrousel {
-  position: relative;
-  top: 18vh;
-  margin-top: 30px;
-  margin-bottom: 160px;
+  margin: 100px 0;
   background-color: black;
+}
+
+@media (max-width: 991px) {
+  .contenedorCarrousel {
+    margin: 80px 0;
+  }
 }
 
 /*Fin GALERIA*/
 /*CONTACTO*/
 .contactUs {
-  position: absolute;
-  top: 18vh;
-  left: 0;
-  width: 100%;
   padding: 40px 100px;
-  background: -webkit-gradient(linear, left top, right top, from(#bd770d), color-stop(30%, #bd770d), color-stop(30%, #999), to(#999));
-  background: linear-gradient(90deg, #bd770d 0%, #bd770d 30%, #999 30%, #999 100%);
+  width: 100%;
+  padding: 20px;
+  background: -webkit-gradient(linear, left top, right top, from(#0A548C), color-stop(30%, #0A548C), color-stop(30%, #BD770D), to(#BD770D));
+  background: linear-gradient(90deg, #0A548C 0%, #0A548C 30%, #BD770D 30%, #BD770D 100%);
 }
 
 .contactUs .title {
@@ -829,7 +884,6 @@ footer p {
 }
 
 .box {
-  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr;
@@ -850,7 +904,6 @@ footer p {
 
 /*formulario*/
 .formBox {
-  position: relative;
   width: 100%;
 }
 
@@ -931,7 +984,7 @@ footer p {
 
 /*Informacion*/
 .info {
-  background: #111;
+  background: #002440;
 }
 
 .info h3 {
@@ -953,7 +1006,7 @@ footer p {
   min-width: 40px;
   height: 40px;
   color: #fff;
-  background: #181818;
+  background: #002440;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -995,10 +1048,9 @@ footer p {
 @media (max-width: 991px) {
   .contactUs {
     background: #bd770d;
-    padding: 20px;
+    width: 100%;
   }
   .box {
-    position: relative;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -1028,12 +1080,11 @@ footer p {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 440px) {
   .contactUs {
     text-align: center;
     padding: 0;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
   }
 }
 

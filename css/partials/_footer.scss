@@ -1,14 +1,11 @@
 /*FOOTER*/
 
 footer {
-    position: map-get($estilos , position );
-    display: map-get($estilos , display );
     justify-content: map-get($estilos , justify-content );
-    bottom: 0;
     width: $ancho1;
     height: auto;
     padding: 50px 100px;
-    background: $color2;
+    background: $gradiente2;
 }
 
 footer h2 {
@@ -44,7 +41,7 @@ footer .container2 .sec.nosotros h2:before {
     left: 0;
     width: 50px;
     height: 2px;
-    background: #f00;
+    background: $color5;
 }
 
 
@@ -65,7 +62,7 @@ footer p {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background: #181818;
+    background: $color7;
     @include flexcentrado;
     margin-right: 10px;
     text-decoration: none;
@@ -98,7 +95,7 @@ footer p {
     left: 0;
     width: 50px;
     height: 2px;
-    background: #f00;
+    background: $color5;
 }
 
 .quickLinks ul li {
@@ -135,11 +132,12 @@ footer p {
     left: 0;
     width: 50px;
     height: 2px;
-    background: #f00;
+    background: $color5;
 }
 
 .contacto .info {
     position: map-get($estilos , position );
+    background: none;
 }
 
 .contacto .info li {
@@ -170,7 +168,7 @@ footer p {
 
 .copyrightText {
     width: $ancho1;
-    background: #181818;
+    background: $color8;
     padding: 8px 80px;
     text-align: center;
     color: $color3;

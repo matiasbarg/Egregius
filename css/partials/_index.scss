@@ -1,12 +1,11 @@
 /*INDEX*/
 
 .container {
-    position: map-get($estilos , position );
-    top: $altura1 + 4vh;
+    margin-top: 50px;
     @include flexcentrado;
     flex-wrap: wrap;
     max-width: 1100px;
-    margin-bottom: 250px;
+    margin-bottom: 80px;
     .card {
         position: map-get($estilos , position );
         width: 320px;
@@ -47,7 +46,7 @@
     transform: scaleX(0);
     transition: transform 0.5s ease-in-out;
     transform-origin: right;
-    transition-delay: 0.3s;
+    transition-delay: 0.2s;
 
 }
 
@@ -78,12 +77,14 @@
         font-size: 1.3rem;
         text-transform: uppercase;
         letter-spacing: 1px;
+        color: $color5;
     
     }
     p {
         font-size: 1rem;
         line-height: 1.4rem;
-        font-weight: 300;
+        font-weight: 400;
+        color: $color6;
     
     }
 }
@@ -108,6 +109,7 @@
     h3{
         font-weight: 600;
         font-size: 2rem;
+        color: $color4;
     }
     
 
@@ -120,8 +122,9 @@
     }
     p{
         padding: 30px;
+        color: $color6;
         a{
-            color: $color2;
+            color: $color7;
         }
     }
 }

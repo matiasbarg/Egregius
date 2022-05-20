@@ -1,12 +1,10 @@
 /*CONTACTO*/
 
 .contactUs{
-    position: absolute;
-    top: $altura1;
-    left: 0;
-    width: $ancho1;
     padding: $margen1 100px;
-    background: linear-gradient(90deg, #bd770d 0%, #bd770d 30%, #999 30%, #999 100%);
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(90deg, $color7 0%, $color7 30%, $color4 30%, $color4 100%);
     .title{
         @include flexcentrado;
         font-size: 2rem;
@@ -33,7 +31,6 @@
     box-shadow: $sombra1;
 }
 .box{
-    position: map-get($estilos , position );
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 5fr 4fr;
@@ -53,7 +50,6 @@
 /*formulario*/
 
 .formBox{
-    position: map-get($estilos , position );
     width: $ancho1;
     .row50{
         display: flex;
@@ -114,7 +110,7 @@
 /*Informacion*/
 
 .info{
-    background: $color2;
+    background: $color6;
     h3{
         color: $color1;
         margin-bottom: $margen1 / 2;
@@ -127,7 +123,7 @@
             min-width: $margen1;
             height: $margen1;
             color: $color1;
-            background: #181818;
+            background: $color6;
             display: map-get($estilos , display );
             justify-content: center;
             align-items: center;
@@ -163,10 +159,10 @@
     
     .contactUs{
         background: #bd770d;
-        padding: $margen1 / 2;
+        width: 100%;
     }
     .box{
-        position: map-get($estilos , position );
+ 
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -191,12 +187,11 @@
     }
 }
 
-@media (max-width: 420px){
+@media (max-width: 440px){
     .contactUs{
         text-align: center;
         padding: 0;
-        margin-left: 0;
-        margin-right: 0;
+margin: 0;
     }
     
 }
