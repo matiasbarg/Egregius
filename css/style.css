@@ -829,12 +829,16 @@ footer p {
 
 /*Fin GALERIA*/
 /*CONTACTO*/
-.contactUs {
-  padding: 40px 100px;
-  width: 100%;
-  padding: 20px;
+.bodyCont {
   background: -webkit-gradient(linear, left top, right top, from(#0A548C), color-stop(30%, #0A548C), color-stop(30%, #BD770D), to(#BD770D));
   background: linear-gradient(90deg, #0A548C 0%, #0A548C 30%, #BD770D 30%, #BD770D 100%);
+  width: 100vw;
+}
+
+.contactUs {
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
 }
 
 .contactUs .title {
@@ -884,6 +888,7 @@ footer p {
 }
 
 .box {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr;
@@ -904,6 +909,7 @@ footer p {
 
 /*formulario*/
 .formBox {
+  position: relative;
   width: 100%;
 }
 
@@ -1046,9 +1052,11 @@ footer p {
 
 /*BREAKPOINTS*/
 @media (max-width: 991px) {
-  .contactUs {
+  .bodyCont {
     background: #bd770d;
-    width: 100%;
+  }
+  .contactUs {
+    padding: 20px;
   }
   .box {
     display: -ms-grid;
@@ -1080,11 +1088,18 @@ footer p {
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 420px) {
   .contactUs {
     text-align: center;
     padding: 0;
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contactUs h2 {
+    margin-left: 50px;
+  }
+  .formBox {
+    max-width: 300px;
   }
 }
 
