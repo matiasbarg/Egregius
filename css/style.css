@@ -619,6 +619,10 @@ footer .container2 .sec {
   margin-right: 30px;
 }
 
+footer p {
+  color: #999;
+}
+
 footer .container2 .sec.nosotros {
   width: 40%;
 }
@@ -638,10 +642,6 @@ footer .container2 .sec.nosotros h2:before {
   width: 50px;
   height: 2px;
   background: #D99125;
-}
-
-footer p {
-  color: #999;
 }
 
 .sci {

@@ -6,33 +6,34 @@ footer {
     height: auto;
     padding: 50px 100px;
     background: $gradiente2;
+    h2 {
+        font-size: 20px;
+    }
+    .container2 {
+        display: map-get($estilos , display );
+        justify-content: map-get($estilos , justify-content );
+        flex-wrap: wrap;
+        flex-direction: row;
+        .sec {
+            margin-right: 30px;
+        }
+    }
+    p {
+        color: $color3;
+    }
 }
 
-footer h2 {
-    font-size: 20px;
-}
-
-footer .container2 {
-    display: map-get($estilos , display );
-    justify-content: map-get($estilos , justify-content );
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-footer .container2 .sec {
-    margin-right: 30px;
-}
 
 footer .container2 .sec.nosotros {
     width: 40%;
+    h2 {
+        position: map-get($estilos , position );
+        color: $color1;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
 }
 
-footer .container2 .sec.nosotros h2 {
-    position: map-get($estilos , position );
-    color: $color1;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
 
 footer .container2 .sec.nosotros h2:before {
     content: '';
@@ -44,95 +45,83 @@ footer .container2 .sec.nosotros h2:before {
     background: $color5;
 }
 
-
-footer p {
-    color: $color3;
-}
-
 .sci {
     margin-top: 20px;
     display: map-get($estilos , display );
-}
-
-.sci li {
-    list-style: none;
-}
-
-.sci li a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background: $color7;
-    @include flexcentrado;
-    margin-right: 10px;
-    text-decoration: none;
-    border-radius: 4px;
-    color: $color1;
-    font-size: 20px;
-}
-
-.sci li a:hover {
-    background: $color1;
-    color: $color2;
+    li {
+        list-style: none;
+        a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: $color7;
+            @include flexcentrado;
+            margin-right: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+            color: $color1;
+            font-size: 20px;
+            &:hover {
+                background: $color1;
+                color: $color2;
+            }
+        }
+    }
 }
 
 .quickLinks {
     position: map-get($estilos , position );
     width: 25%;
+    h2 {
+        position: map-get($estilos , position );
+        color: $color1;
+        font-weight: 500;
+        margin-bottom: 15px;
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: $color5;
+        }
+        
+    }
 }
 
-.quickLinks h2 {
-    position: map-get($estilos , position );
-    color: $color1;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.quickLinks h2:before {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 50px;
-    height: 2px;
-    background: $color5;
-}
 
 .quickLinks ul li {
     list-style: none;
-}
-
-.quickLinks ul li a {
-    color: $color3;
-    text-decoration: none;
-    margin-bottom: 10px;
-    display: inline-block;
-}
-
-.quickLinks ul li a:hover {
-    color: $color1;
+    a {
+        color: $color3;
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: inline-block;
+        &:hover {
+            color: $color1;
+        }
+    }
 }
 
 .contacto {
     width: calc(35% - 60px);
     margin-right: 0 !important;
-}
-
-.contacto h2 {
-    position: map-get($estilos , position );
-    color: $color1;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.contacto h2:before {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 50px;
-    height: 2px;
-    background: $color5;
+    h2 {
+        position: map-get($estilos , position );
+        color: $color1;
+        font-weight: 500;
+        margin-bottom: 15px;
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: $color5;
+        }
+    }
 }
 
 .contacto .info {
